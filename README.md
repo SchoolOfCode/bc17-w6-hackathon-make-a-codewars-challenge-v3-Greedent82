@@ -1,3 +1,10 @@
+
+
+If you're the other group trying to do my kata, you'll find the challenge in 'clefairy.md'. Thanks for your time trying out my challenge :D
+
+
+
+
 # Make your own Codewars Style Challenge
 
 In this workshop, you'll create your own programming challenge for others to solve, similar to the ones you might have tackled on Codewars. You'll write unit tests to validate solutions. Then you can share your challenge with other bootcampers for them to solve. If a submitted solution passes all your tests, it will be considered a correct solution - just like on Codewars. This is a great chance to get creative and come up with a programming challenge to stump your peers!
@@ -111,4 +118,5 @@ Make sure you present your project in the markdown file - this will be assessed 
 ### 🎫 Ticket 7 - Complete katas from others
 
 To solve katas created by other bootcampers, first clone their repository using the shared link. `cd` into the folder, run `npm install` to get the dependencies, then implement a solution in main.js. Execute their test cases to validate your code against their requirements. Provide feedback on the clarity of their instructions, difficulty level, and effectiveness of the tests. Engaging with each other's challenges allows everyone to learn. Make sure to critique respectfully - creating a programming challenge is difficult!
+
 

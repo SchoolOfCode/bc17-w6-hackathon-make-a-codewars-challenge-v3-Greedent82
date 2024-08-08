@@ -1,3 +1,11 @@
+
+
+
+If you're the other group trying to do my kata, you'll find the challenge in 'clefairy.md'. Thanks for your time trying out my challenge :D
+
+
+
+
 # Make a word from the letters of another!
 
 Just want to say if anyone who made this hackathon is reading this; thank you. This one has been a lot of fun!
