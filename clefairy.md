@@ -1,3 +1,5 @@
+Please view this md in code mode (just above, next to preview), lest the ASCII break the formatting :)
+
 # How many words can you make out of the letters in 'CLEFAIRY?'
 
 Well, we're about to find out...
@@ -10,14 +12,18 @@ That is to say; check to see if a word contains ONLY the letters C, L, E, F, A, 
 
 If it's an anagram (in that you don't use any letter more than once) it should return:
 ⠀⠀`'Perfect anagram! '` (note the space)
-
-From there, it should concatonate the following based on how long the word is:⠀
-
-If the word is 7 characters or longer it should return `'Excellent job!'`
-
-If the word is 6 characters or under, it should return `'Good job!'`
-
-If it contains a letter not present in `'CLEFAIRY'`, it should only return `'Womp Womp'`
+     ⠀⠀⠀⠀⢀⣀⣀⡠⠖⢉⣌⢆⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣠⠚⠉⠀⠈⠉⠲⣿⣿⡜⡀⠀⠀⠀⠀From there, it should concatonate the following based on how long the word is:
+⡔⢉⣙⣓⣒⡲⠮⡇⠀⠀⠀⠀⠀⠀⠘⡿⡇⡇⠀⠀⠀⠀
+⡇⠘⣿⣿⣿⠏⠀⠀⠠⣀⡀⠀⠀⠀⠀⡇⠈⠳⡄⠀⠀⠀
+⢹⠀⢻⣿⠇⠀⠀⣀⣀⠀⡍⠃⠀⠀⣠⣷⡟⢳⡜⡄⠀⠀   If the word is 7 characters or longer it should return `'Excellent job!'`
+⠈⣆⠀⠋⢀⢔⣵⣿⠋⠹⣿⠒⠒⠚⠁⣿⣿⣾⣷⢸⠤⡄⠀
+⠀⡇⠀⠀⢸⢸⣿⣿⣶⣾⡏⡇⠀⠀⢀⡘⣝⠿⡻⢸⡰⠁
+⠀⢳⠀⠀⠈⢆⠻⢿⡿⠟⡱⠁⠰⠛⢿⡇⠀⠉⠀⡸⠁      If the word is 6 characters or under, it should return `'Good job!'`
+⠀⠈⢆⠀⠀⠀⠉⠒⠒⣉⡀⠀⠀⢇⠀⡇⠀⠀⢠⠃⠀⠀
+⠀⠀⠈⠣⡀⠀⠀⠀⠀⠀⢉⡱⠀⠀⠉⠀⢀⡴⠁⠀⠀⠀
+⠀⠀⠀⠀⠈⠓⠦⣀⣉⡉⠁⢀⣀⣠⠤⠒⠥⣄⠀⠀⠀⠀If it contains a letter not present in `'CLEFAIRY'`, it should only return `'Womp Womp'`
+⠀⠀⠀⠀⠀⠰⣉⣀⣀⡠⠭⠛⠀⠀⠑⠒⠤⠤⠷⠀
 
 
 # For example:
