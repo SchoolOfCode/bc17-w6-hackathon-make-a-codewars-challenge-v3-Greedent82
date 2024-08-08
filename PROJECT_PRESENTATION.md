@@ -46,4 +46,18 @@ theres probably some way of not nesting so much, I'll see if I have time to refa
 
 # Coding log 
 
+`Set` seems like an easy way of checking if there are duplicates in an array, I'll use that
+
+Words under 6 letters long return `''`, incompetent as I am, I forgot to return something if it doesnt fulfill the
+word.length > 6 condition. Just returns nothing
+
+Cannot get the function to break if a letter that isnt C L E F A I R Y is entered; quite irritating
+
 Going to have to use a 'for of' loop instead of for each, given i need to break it early if there's a letter present that doesnt match clefairy 
+
+These tests are super boring, I would've liked to check for different things in the same function execution, but I can't think of how I'd do that with the framework I set up
+
+On reflection, this is probably a little much for a team of 3 to approach for the first time and solve in a reasonable timeframe. I'll see if I can't make an easier challenge (maybe just a boolean)
+
+Also it occurs to me that the set function couldnt be used if i used a word that has duplicate letters instead.
+If I used 'cleffa' to compare against instead of 'clefairy', a word with 2 f's shouldn't be counted as not a strict anagram, wheras they would if i just injected cleffa into the function currently
