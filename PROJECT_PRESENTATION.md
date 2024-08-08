@@ -43,3 +43,7 @@ setup anagram result `if (variable has no repeats) result += console.log("That's
 setup long word result `if (variable.length > 6) result += console.log(Excellent job!)`
 
 theres probably some way of not nesting so much, I'll see if I have time to refactor this later. For now I'll try the above spaghetti garbage 
+
+# Coding log 
+
+Going to have to use a 'for of' loop instead of for each, given i need to break it early if there's a letter present that doesnt match clefairy 
