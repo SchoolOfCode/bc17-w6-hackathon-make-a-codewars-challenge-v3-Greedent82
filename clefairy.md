@@ -8,18 +8,17 @@ Create a function that takes in a word, and checks to see if that word can be ma
 
 That is to say; check to see if a word contains ONLY the letters C, L, E, F, A, I, R, and Y. It should return the following based on how close it is:
 
-      ⠀⠀⠀⠀⠀⠀⠀⡠⠖⢉⣌⢆⠀⠀⠀⠀⠀If it's an anagram (in that you don't use any letter more than once) it should return:
-⠀⠀⠀⠀⠀⠀⠀⣠⠚⠉⠀⠈⠉⠲⣿⣿⡜⡀⠀⠀⠀⠀`'Perfect anagram! '` (note the space)
-⡔⢉⣙⣓⣒⡲⠮⡇⠀⠀⠀⠀⠀⠀⠘⡿⡇⡇⠀⠀⠀⠀
-⡇⠘⣿⣿⣿⠏⠀⠀⠠⣀⡀⠀⠀⠀⠀⡇⠈⠳⡄⠀⠀⠀From there, it should concatonate the following based on how long the word is:
-⢹⠀⢻⣿⠇⠀⠀⣀⣀⠀⡍⠃⠀⠀⣠⣷⡟⢳⡜⡄⠀⠀  
-⠈⣆⠀⠋⢀⢔⣵⣿⠋⠹⣿⠒⠒⠚⠁⣿⣿⣾⣷⢸⠤⡄    If the word is 7 characters or longer it should return `'Excellent job!'`
-⠀⡇⠀⠀⢸⢸⣿⣿⣶⣾⡏⡇⠀⠀⢀⡘⣝⠿⡻⢸⡰⠁
-⠀⢳⠀⠀⠈⢆⠻⢿⡿⠟⡱⠁⠰⠛⢿⡇⠀⠉⠀⡸⠁⠀    If the word is 6 characters or under, it should return `'Good job!'`
-⠀⠈⢆⠀⠀⠀⠉⠒⠒⣉⡀⠀⠀⢇⠀⡇⠀⠀⢠⠃⠀⠀
-⠀⠀⠈⠣⡀⠀⠀⠀⠀⠀⢉⡱⠀⠀⠉⠀⢀⡴⠁⠀⠀⠀If it contains a letter not present in `'CLEFAIRY'`, it should only return `'Womp Womp'`
-⠀⠀⠀⠀⠈⠓⠦⣀⣉⡉⠁⢀⣀⣠⠤⠒⠥⣄⠀⠀⠀ 
-⠀⠀⠀⠀⠀⠰⣉⣀⣀⡠⠭⠛⠀⠀⠑⠒⠤⠤⠷⠀⠀⠀
+If it's an anagram (in that you don't use any letter more than once) it should return:
+⠀⠀`'Perfect anagram! '` (note the space)
+
+From there, it should concatonate the following based on how long the word is:⠀
+
+If the word is 7 characters or longer it should return `'Excellent job!'`
+
+If the word is 6 characters or under, it should return `'Good job!'`
+
+If it contains a letter not present in `'CLEFAIRY'`, it should only return `'Womp Womp'`
+
 
 # For example:
 
@@ -43,6 +42,19 @@ There's a whole host more examples in `clefairy.test.js`, but I hope I've explai
 As a footnote, check out this link https://stackoverflow.com/questions/49215358/checking-for-duplicate-strings-in-javascript-array for how to check for duplicates in an array... particularly the ES6 version response. Might be useful :)
 
 Best of luck! Head over to `clefairy.js` to get started! I've seen how incredible you all are at this, I'm sure this'll be no problem for you! :D
+
+⠀     ⠀⠀⠀⠀⢀⣀⣀⡠⠖⢉⣌⢆⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣠⠚⠉⠀⠈⠉⠲⣿⣿⡜⡀⠀⠀⠀⠀
+⡔⢉⣙⣓⣒⡲⠮⡇⠀⠀⠀⠀⠀⠀⠘⡿⡇⡇⠀⠀⠀⠀
+⡇⠘⣿⣿⣿⠏⠀⠀⠠⣀⡀⠀⠀⠀⠀⡇⠈⠳⡄⠀⠀⠀
+⢹⠀⢻⣿⠇⠀⠀⣀⣀⠀⡍⠃⠀⠀⣠⣷⡟⢳⡜⡄⠀⠀
+⠈⣆⠀⠋⢀⢔⣵⣿⠋⠹⣿⠒⠒⠚⠁⣿⣿⣾⣷⢸⠤⡄
+⠀⡇⠀⠀⢸⢸⣿⣿⣶⣾⡏⡇⠀⠀⢀⡘⣝⠿⡻⢸⡰⠁
+⠀⢳⠀⠀⠈⢆⠻⢿⡿⠟⡱⠁⠰⠛⢿⡇⠀⠉⠀⡸⠁⠀
+⠀⠈⢆⠀⠀⠀⠉⠒⠒⣉⡀⠀⠀⢇⠀⡇⠀⠀⢠⠃⠀⠀
+⠀⠀⠈⠣⡀⠀⠀⠀⠀⠀⢉⡱⠀⠀⠉⠀⢀⡴⠁⠀⠀⠀
+⠀⠀⠀⠀⠈⠓⠦⣀⣉⡉⠁⢀⣀⣠⠤⠒⠥⣄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠰⣉⣀⣀⡠⠭⠛⠀⠀⠑⠒⠤⠤⠷⠀
 
 # Plan
 
