@@ -23,7 +23,11 @@ Create a function that take in a word, and checks to see if that word can be mad
 
     If it can't, test should return false
 
-# Thought Proccess (function)
+# Thought Proccess
+
+I wanted to give other people a challenge similar to one they already faced (the scrabble score) but tweak it slightly to make them rearrange the code a bit to make it work in a different scenario
+
+# Thought Process (code)
 
 Easiest way to do this is probably to split the word into an array and iterate through the array to see if it does (not) have the letters C, L, E, F, A, I, R, or Y. Probably with some kind of for (each) loop. Sounds incredibly messy to check `for x OR y OR z ...` 8 times, but I cant think of anything better
 
@@ -52,7 +56,7 @@ setup long word result `if (variable.length > 6) result += console.log(Excellent
 
 theres probably some way of not nesting so much, I'll see if I have time to refactor this later. For now I'll try the above spaghetti garbage 
 
-# Coding log 
+# Coding log (you can just ignore this)
 
 `Set` seems like an easy way of checking if there are duplicates in an array, I'll use that
 
@@ -69,3 +73,60 @@ On reflection, this is probably a little much for a team of 3 to approach for th
 
 Also it occurs to me that the set function couldnt be used if i used a word that has duplicate letters instead.
 If I used 'cleffa' to compare against instead of 'clefairy', a word with 2 f's shouldn't be counted as not a strict anagram, wheras they would if i just injected cleffa into the function currently
+
+Made an easy mode. Wanted to put it in a seperate folder, but it'd likely just make vitest a lot more fiddly to install. Just the files to the main folder
+
+# Soloution walkthrough 
+
+This is what they start with: 
+
+function clefairyWord(word) {}
+
+From there I'm hoping they remember how they solved the scrabble problem, where they predefined the scores for each letter. My challenge is similar in that they are checking against an array
+
+let clefairy = ['C' , 'L' , 'E' , 'F' , 'A' , 'I' , 'R' , 'Y']
+    let matches = []
+    let result = ''
+
+    Hopefully you can see my idea. The clefairy variable is markedly similar to the scrabble score variable from earlier this week
+
+The inteded 'for' loop is meant to be something they'd recognise how to do from week 2, just with added complexity 
+
+    for (let letter of word) {
+        if (clefairy.includes(letter.toUpperCase())) {
+            matches.push(letter);
+        } else {
+            return "Womp Womp";
+        }}
+
+        I don't think this is a super stretch for most bootcampers to come up with, it does require a for of to make it break early though, so that might require a google. I'm not sure
+
+The most unreasonable request I came up with is the check for duplicates, but I found an answer very quickly on stack overflow. I linked to the exact article I got my own soloution from though, so hopefully it shouldnt be too bad 
+
+    export function dupes(arr) {
+        return new Set(arr).size !== arr.length
+        }
+
+      
+        if (dupes(matches) === false) {
+            result += 'Perfect anagram! '
+        }
+
+    The space is there on purpose so you dont have to fiddle with the string based on what you're concatonating. That might be a step too far 
+
+From there it should be pretty easy to check the length of the array they ended up with and return what they have collected in the result variable
+
+if (matches.length > 6) {
+        result += 'Excellent job!'
+    }
+    
+    
+    if (matches.length < 7) {
+        result += 'Good job!'
+    }
+    return result
+    
+I did make an easy mode too, but this demands only the for loop instead, so I probably won't go over it 
+
+
+

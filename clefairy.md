@@ -1,4 +1,4 @@
-Please view this md in code mode (just above, next to preview), lest the ASCII break the formatting :)
+If viewing on GitHub, please view this md in code mode (just above, next to preview), lest the ASCII break the formatting :)
 
 also note that THIS IS THE HARD MODE CHALLENGE if you'd prefer to try the easy mode of this,
 refer to `cleffa.js` , `cleffa.test.js`, and `cleffa.md`. I might've gotten carried away here. Sorry 
