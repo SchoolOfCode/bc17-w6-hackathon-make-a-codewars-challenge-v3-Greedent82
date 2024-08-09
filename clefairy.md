@@ -46,12 +46,11 @@ If it's an anagram (in that you don't use any letter more than once) it should r
 `'cosmic'` uses letters not present in clefairy. It should return 
       `'Womp Womp`
 
-There's a whole host more examples in `clefairy.test.js`, but I hope I've explained things decently enough
+There's a whole host more examples in `clefairy.test.js`, but I hope I've explained things decently enough. In particular, please note that to test your function you should use npm run test clefairy.test.js, so you don't test the easy mode functions :D
 
 As a footnote, check out this link https://stackoverflow.com/questions/49215358/checking-for-duplicate-strings-in-javascript-array for how to check for duplicates in an array... particularly the ES6 version response. Might be useful :)
 
 Best of luck! Head over to `clefairy.js` to get started! I've seen how incredible you all are at this, I'm sure this'll be no problem for you! :D
-
 
 # Plan
 
