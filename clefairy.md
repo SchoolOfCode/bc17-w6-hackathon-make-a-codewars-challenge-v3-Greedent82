@@ -1,5 +1,8 @@
 Please view this md in code mode (just above, next to preview), lest the ASCII break the formatting :)
 
+also note that THIS IS THE HARD MODE CHALLENGE if you'd prefer to try the easy mode of this,
+refer to `cleffa.js` , `cleffa.test.js`, and `cleffa.md`. I might've gotten carried away here. Sorry 
+
 # How many words can you make out of the letters in 'CLEFAIRY?'
 
 Well, we're about to find out...
@@ -41,7 +44,7 @@ If it's an anagram (in that you don't use any letter more than once) it should r
       `'Good job!'` 
 
 `'cosmic'` uses letters not present in clefairy. It should return 
-      `'Perfect anagram! Excellent job!'`
+      `'Womp Womp`
 
 There's a whole host more examples in `clefairy.test.js`, but I hope I've explained things decently enough
 
@@ -52,7 +55,7 @@ Best of luck! Head over to `clefairy.js` to get started! I've seen how incredibl
 
 # Plan
 
-If you're stuck, I've made a plan below to nudge you along. If you'd rather do this strictly no spoilers, you can collapse all of this by pressing the arrow between line 45 and `# Plan`
+If you're stuck, I've made a plan below to nudge you along. If you'd rather do this strictly no spoilers, you can collapse all of this by pressing the arrow between line 55 and `# Plan`
 
 1. Set up an array of the letters in clefairy 
 2. Set up a blank array to serve as a basket

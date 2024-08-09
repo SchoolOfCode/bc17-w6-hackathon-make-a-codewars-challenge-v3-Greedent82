@@ -1,15 +1,11 @@
-import {test, expect} from 'vitest'
+import {test, expect,} from 'vitest'
 import {clefairyWord} from './clefairy.js'
 
-//Every batch of tests must test every letter (C, L, E, F, A , I, R, Y) (Ctrl + F to check)
-//Every batch of tests must test odd capitalisation (all caps, camel, all lower etc)
-//Each batch of tests should test as many words of varying lengths as possible
-//There needs to be 5 batches of tests:
-     //7+ letters, strict anagram
-     //6- letters, strict anagram
-     //7+ letters, composite of letters
-     //6- letters, composite of letters
-     //fail
+
+//To run these tests specifically you'll have to enter 'npm run test clefairy.test.js' Best of luck :)
+
+
+
 
 //Words that only use letters once and are greater than 6 characters long
 
@@ -25,7 +21,7 @@ test('6 < , anagram', () => {
    
 test('7 > , anagram', () => {
      expect(clefairyWord('clear')).toBe('Perfect anagram! Good job!');
-     expect(clefairyWord('layer')).toBe('Perfect anagram! Good job!');
+     expect(clefairyWord('laYer')).toBe('Perfect anagram! Good job!');
      expect(clefairyWord('I')).toBe('Perfect anagram! Good job!');
      expect(clefairyWord('fry')).toBe('Perfect anagram! Good job!');
      expect(clefairyWord('rifle')).toBe('Perfect anagram! Good job!');
@@ -42,7 +38,7 @@ test('6 < , not anagram', () => {
      expect(clefairyWord('Airfryer')).toBe('Excellent job!');
      expect(clefairyWord('CYRILLIC')).toBe('Excellent job!');
      expect(clefairyWord('freefall')).toBe('Excellent job!');
-     expect(clefairyWord('Riffraff')).toBe('Excellent job!');
+     expect(clefairyWord('RiffrAff')).toBe('Excellent job!');
                })
 
 //Words that use letters more than once and are under 7 characters long
@@ -53,7 +49,7 @@ test('7 > , not anagram', () => {
      expect(clefairyWord('Reef')).toBe('Good job!');
      expect(clefairyWord('ICICLE')).toBe('Good job!');
      expect(clefairyWord('Lilly')).toBe('Good job!');
-     expect(clefairyWord('racer')).toBe('Good job!');
+     expect(clefairyWord('racEr')).toBe('Good job!');
      expect(clefairyWord('fee')).toBe('Good job!');
                })
 
@@ -71,13 +67,13 @@ test('Fail', () => {
 
 //Further test cases can be directed here
 
-               const testCases = [
+const testCases = [
      ['AZUMARILL', 'Womp Womp'],
      ['REALLY', 'Good job!'],
      ['Lyrically', 'Excellent job!'],
      ['flare', 'Perfect anagram! Good job!'],
      ['fairley', 'Perfect anagram! Excellent job!'],
                   ];
-test.each(testCases)('test.each method', (word, expectedResult) => {
+test.each(testCases)('bank for further test cases if necessary', (word, expectedResult) => {
      expect(clefairyWord(word)).toBe(expectedResult);
 });
